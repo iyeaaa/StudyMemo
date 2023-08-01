@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iOS/Layout/Application Lifecycle.md",
+                "file": "iOS/Angela Yu iOS/Todoey.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iOS/Layout/Application Lifecycle.md",
+                "file": "iOS/Angela Yu iOS/Todoey.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iOS/Layout/Application Lifecycle.md",
+                "file": "iOS/Angela Yu iOS/Todoey.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iOS/Layout/Application Lifecycle.md"
+                "file": "iOS/Angela Yu iOS/Todoey.md"
               }
             }
           }
@@ -149,12 +149,14 @@
   },
   "active": "fa4fc11dc0e82393",
   "lastOpenFiles": [
-    "git/git 시작하기.md",
+    "스크린샷 2023-07-31 오후 9.46.24.png",
+    "iOS/Angela Yu iOS/Flash Chat.md",
+    "iOS/Angela Yu iOS/Todoey.md",
     "iOS/Layout/Application Lifecycle.md",
+    "git/git 시작하기.md",
     "무제 파일.md",
     "git",
     "iOS/Continer View Controller/Navigation Controller.md",
-    "iOS/Angela Yu iOS/Flash Chat.md",
     "iOS/Attached file/Pasted image 20230728221833.png",
     "iOS/Lifecycle/ViewController Lifecycle.md",
     "iOS/UITextFieldDelegate.md",
@@ -189,8 +191,6 @@
     "2023-07-24.md",
     "Attached file/Pasted image 20230724212425.png",
     "Attached file/Pasted image 20230724211730.png",
-    "iOS/Attached file",
-    "AsyncOperation.md",
-    "Operation.md"
+    "iOS/Attached file"
   ]
 }
