@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "410cd5e37c9900c7",
+        "id": "ce8c9bd8f2027eb9",
         "type": "tabs",
         "children": [
           {
-            "id": "fa4fc11dc0e82393",
+            "id": "cb1fba19d9ffd068",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,17 +147,29 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fa4fc11dc0e82393",
+  "active": "cb1fba19d9ffd068",
   "lastOpenFiles": [
-    "스크린샷 2023-07-31 오후 9.46.24.png",
-    "iOS/Angela Yu iOS/Flash Chat.md",
+    "iOS/Attached file/CoreData 작동방식.png",
+    "iOS/Attached file/용어.png",
+    "iOS/Attached file/데이터 베이스 용어.drawio.png",
+    "iOS/Architecture and Design Pattern/MVC.md",
+    "iOS/Architecture and Design Pattern/Delegate.md",
     "iOS/Angela Yu iOS/Todoey.md",
+    "iOS/Attached file/swift의 데이터베이스.png",
+    "iOS/Attached file/Pasted image 20230728221833.png",
+    "iOS/Attached file/Pasted image 20230725213337.png",
+    "iOS/Attached file/Pasted image 20230725212533.png",
+    "iOS/Attached file/Pasted image 20230725212121.png",
+    "iOS/Attached file/Pasted image 20230725123147.png",
+    "용어.png",
+    "데이터 베이스 용어.drawio.png",
+    "스크린샷 2023-07-31 오후 9.46.24.png.md",
+    "iOS/Angela Yu iOS/Flash Chat.md",
     "iOS/Layout/Application Lifecycle.md",
     "git/git 시작하기.md",
     "무제 파일.md",
     "git",
     "iOS/Continer View Controller/Navigation Controller.md",
-    "iOS/Attached file/Pasted image 20230728221833.png",
     "iOS/Lifecycle/ViewController Lifecycle.md",
     "iOS/UITextFieldDelegate.md",
     "iOS/Lifecycle",
@@ -170,16 +182,10 @@
     "iOS/Operation/Operation.md",
     "iOS/Operation/AsyncOperation.md",
     "iOS/available.md",
-    "iOS/Architecture and Design Pattern/Delegate.md",
     "iOS/URLSession/URLSession.md",
     "URLSession/URL Loading System.md",
-    "iOS/Attached file/Pasted image 20230725213337.png",
-    "iOS/Attached file/Pasted image 20230725212533.png",
-    "iOS/Attached file/Pasted image 20230725212121.png",
-    "iOS/Attached file/Pasted image 20230725123147.png",
     "Dark Mode.md",
     "iOS",
-    "iOS/Architecture and Design Pattern/MVC.md",
     "iOS/Angela Yu iOS",
     "iOS/Layout/AutoLayout.md",
     "iOS/Layout",
@@ -188,9 +194,6 @@
     "iOS/Architecture and Design Pattern",
     "iOS/URLSession/URLSessionTask.md",
     "iOS/URLSession",
-    "2023-07-24.md",
-    "Attached file/Pasted image 20230724212425.png",
-    "Attached file/Pasted image 20230724211730.png",
     "iOS/Attached file"
   ]
 }

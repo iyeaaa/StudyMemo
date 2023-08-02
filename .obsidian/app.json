@@ -1,7 +1,8 @@
 {
-  "attachmentFolderPath": "Attached file",
+  "attachmentFolderPath": "iOS/Attached file",
   "spellcheck": false,
   "showLineNumber": false,
   "rightToLeft": false,
-  "promptDelete": false
+  "promptDelete": false,
+  "defaultViewMode": "source"
 }
