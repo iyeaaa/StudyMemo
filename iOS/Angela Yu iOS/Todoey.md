@@ -246,5 +246,62 @@ OOP의 Property = CoreData의 Attribute = Database의 Field
 ![[CoreData 작동방식.png|400]]
 
 
+PersistentContainer에 들어가 CoreData의 Entity의 모이고, 그 묶음은 SQLite 데이터베이스다.
+Context에서 PersistentConainer에 CRUD 연산을 하며 Application 사이에서 상호작용한다.
 
+```
+func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+```
+
+AppDelegate class의 saveContext 함수를 보면,
+context.hasChanges() 과정은 마치 git에서 변경된 사항들만 commit하듯이 변경된 부분만 저장할 수 있다.
+때문에 CRUD에서 저장을 해주면 Update에 대한 처리를 따로 해줄 필요가 없다.
+또한 Read를 제외한 Create, Update, Delete는 작업 후 무조건 context.save()를 거쳐줘야 작업이 저장됨에 유의하자.
+
+### AppDelegate 참조
+```
+UIApplication.shared.delegate as! AppDelegate
+```
+
+### context 생성
+```
+let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+```
+
+### save with CoreData
+```
+func saveItems() {
+        do {
+            try context.save()
+        } catch {
+            print("Error saving context \(error)")
+        }
+        self.tableView.reloadData()
+}
+```
+
+
+### load with CoreData
+```
+func loadItems() {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        do {
+            itemArray = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context, \(error)")
+        }
+}
+```
 
