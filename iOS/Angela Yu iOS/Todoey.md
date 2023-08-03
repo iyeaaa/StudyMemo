@@ -305,3 +305,41 @@ func loadItems() {
 }
 ```
 
+
+11. SearchBar
+
+```
+extension TodoListViewContorller: UISearchBarDelegate
+```
+UISearchBarDelegate를 준수해서 구현할 수 있다.
+
+```
+func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
+```
+SearchBar를 클릭하면 다음 함수가 호출되고,
+
+```
+func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
+```
+이 함수는 SearchBar가 변할때마다 호출된다.
+
+```
+func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            loadItems()
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+    }
+```
+searchBar(_ :textDidChange:) 함수를 통해 x버튼을 눌렀을 때 Item들이 모두 로드되도록 할 수 있다.
+또한 키보드가 내려가고 커서 깜빡임을 없애기 위해 resignFirstResponder() 함수를 호출할 수 있는데,
+비동기적으로 메인큐에 보내 searchBar(_ :textDidChange:) 함수가 종료된 후에 호출되도록 해야한다.
+
+하지만, stackoverflow의 [답변](https://stackoverflow.com/a/60666199)을 보니..
+```
+func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
+```
+이 함수를 통해 간단하고 명확하게 처리할 수 있었다.
+
