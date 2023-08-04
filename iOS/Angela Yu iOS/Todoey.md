@@ -159,21 +159,7 @@ print(myCar.colour)
 이 인스턴스들은 모두 싱글톤이다.
 싱글톤은 모든 클래스와 개체에 공유될 수 있다는 특징이 있다.
 
-7. TableView 체크박스 문제점
-
-```
-let cell = UITableViewCell(style:reuseIdentifier:)
-```
-이 방식은 cell을 내리고 다시 올릴 때 cell이 다시 생성되는 방식으로 움직이기 때문에
-선택된 체크박스가 해제된다.
-
-```
-let cell = tableView.dequeueReusableCell(withIdentifier:for:)
-```
-dequeue로 cell을 생성하게 되면 스크롤을 내려 cell이 화면밖으로 나갔을 때, 
-밑의 cell로 움직여 cell이 재사용되기 때문에 위에 있던 체크박스가 갑자기 아래로 내려오게 된다는 문제가 있다.
-
-이 문제를 해결하려면 체크박스 속성과 배열 항목을 연결시켜야한다.
+7. 
 
 8. [SandBox란?](https://velog.io/@gnwjd309/iOS-sandbox)
 
@@ -292,7 +278,6 @@ func saveItems() {
 }
 ```
 
-
 ### load with CoreData
 ```
 func loadItems() {
@@ -304,6 +289,15 @@ func loadItems() {
         }
 }
 ```
+
+### delete with CoreData
+```
+context.delete(itemArray[indexPath.row])
+itemArray.remove(at: indexPath.row)
+context.saveData()
+```
+context에서 Delete 연산을 수행 후 배열에서 해당 요소를 삭제한다.
+또한 git의 commit과 유사하게 context의 save연산을 통해서 해당 요소가 삭제되었다는 내용을 푸시해주어야한다.
 
 
 11. SearchBar
@@ -334,12 +328,8 @@ func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
     }
 ```
 searchBar(_ :textDidChange:) 함수를 통해 x버튼을 눌렀을 때 Item들이 모두 로드되도록 할 수 있다.
-또한 키보드가 내려가고 커서 깜빡임을 없애기 위해 resignFirstResponder() 함수를 호출할 수 있는데,
+
+또한 resignFirstResponder() 함수는 searchBar의 FirstReponder를 종료시키는 함수인데, searchBar(_ :textDidChange:)가 끝나기 전까지는 FirstReponder를 종료시킬 수 없기 때문에,
 비동기적으로 메인큐에 보내 searchBar(_ :textDidChange:) 함수가 종료된 후에 호출되도록 해야한다.
 
-하지만, stackoverflow의 [답변](https://stackoverflow.com/a/60666199)을 보니..
-```
-func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
-```
-이 함수를 통해 간단하고 명확하게 처리할 수 있었다.
 

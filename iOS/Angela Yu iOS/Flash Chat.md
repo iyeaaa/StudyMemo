@@ -171,72 +171,13 @@ end
 
 [Firebase api 문서](https://firebase.google.com/docs?hl=ko%2Fios)에서 자세한 내용 확인가능.
 
-
 5. [[Navigation Controller]]
 
+6. [[Custom cell]]
 
-6. iOS Table Views
+7. [[ViewController Lifecycle]]
 
-~~~
-class ChatViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        tableView.dataSource = self
-    }
-}
-~~~
-~~~
-extension ChatViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
-    }
+8. Realm
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = messages[indexPath.row].body
-        return cell
-    }
-}
-~~~
+[@objc dynamic](https://ios-daniel-yang.tistory.com/78) 
 
-UITableViewDataSource 프로토콜을 준수한 후
-tableView(_ :numberOfRowsIn:) 에 행 개수를 리턴하고
-tableView(_ :cellForRowAt:) 에 셀을 만들어 리턴해줘야 한다.
-
-
-~~~
-class ChatViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        tableView.delegate = self
-    }
-}
-~~~
-~~~
-extension ChatViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-    }
-}
-~~~
-
-UITableViewDelegate를 준수하고
-tableView(_ :didSelectRowAt:)에 셀을 선택했을 때 실행할 함수를 입력한다.
-
-
-7. Creating custom UI with .xib files
-
-[xib 사용법](https://woozzang.tistory.com/189)
-
-	1. xib 생성
-	2. indentifier 설정
-	3. UINib 생성
-	4. UITableView의 register함수로 UINib을 cell로 등록
-	5. dequeueReusableCell(withIdentifier:for:)함수로 cell 생성 후 타입캐스팅으로 사용
-
-
-8. [[ViewController Lifecycle]]
-
-9. 

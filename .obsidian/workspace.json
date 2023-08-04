@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iOS/Angela Yu iOS/Todoey.md",
+                "file": "iOS/TableView Usage/Custom cell.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iOS/Angela Yu iOS/Todoey.md",
+                "file": "iOS/TableView Usage/Custom cell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "iOS/Angela Yu iOS/Todoey.md",
+                "file": "iOS/TableView Usage/Custom cell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iOS/Angela Yu iOS/Todoey.md"
+                "file": "iOS/TableView Usage/Custom cell.md"
               }
             }
           }
@@ -149,12 +149,19 @@
   },
   "active": "cb1fba19d9ffd068",
   "lastOpenFiles": [
+    "iOS/TableView Usage/TableView.md",
+    "iOS/TableView Usage/Custom cell.md",
+    "iOS/Angela Yu iOS/Flash Chat.md",
+    "iOS/TableView Usage",
+    "iOS/Angela Yu iOS/Todoey.md",
+    "스크린샷 2023-07-31 오후 9.46.24.png.md",
+    "iOS/URLSession/URLSession.md",
+    "iOS/Angela Yu iOS/Weather app.md",
     "iOS/Attached file/CoreData 작동방식.png",
     "iOS/Attached file/용어.png",
     "iOS/Attached file/데이터 베이스 용어.drawio.png",
     "iOS/Architecture and Design Pattern/MVC.md",
     "iOS/Architecture and Design Pattern/Delegate.md",
-    "iOS/Angela Yu iOS/Todoey.md",
     "iOS/Attached file/swift의 데이터베이스.png",
     "iOS/Attached file/Pasted image 20230728221833.png",
     "iOS/Attached file/Pasted image 20230725213337.png",
@@ -162,12 +169,8 @@
     "iOS/Attached file/Pasted image 20230725212121.png",
     "iOS/Attached file/Pasted image 20230725123147.png",
     "용어.png",
-    "데이터 베이스 용어.drawio.png",
-    "스크린샷 2023-07-31 오후 9.46.24.png.md",
-    "iOS/Angela Yu iOS/Flash Chat.md",
     "iOS/Layout/Application Lifecycle.md",
     "git/git 시작하기.md",
-    "무제 파일.md",
     "git",
     "iOS/Continer View Controller/Navigation Controller.md",
     "iOS/Lifecycle/ViewController Lifecycle.md",
@@ -176,13 +179,11 @@
     "iOS/Continer View Controller/Container view Controller.md",
     "iOS/CoreLocation.md",
     "iOS/Continer View Controller",
-    "iOS/Angela Yu iOS/Weather app.md",
     "iOS/Deployment Target.md",
     "iOS",
     "iOS/Operation/Operation.md",
     "iOS/Operation/AsyncOperation.md",
     "iOS/available.md",
-    "iOS/URLSession/URLSession.md",
     "URLSession/URL Loading System.md",
     "Dark Mode.md",
     "iOS",
@@ -193,7 +194,6 @@
     "iOS/Operation/Operation의 주요기능.md",
     "iOS/Architecture and Design Pattern",
     "iOS/URLSession/URLSessionTask.md",
-    "iOS/URLSession",
-    "iOS/Attached file"
+    "iOS/URLSession"
   ]
 }
