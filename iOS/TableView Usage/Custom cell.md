@@ -44,3 +44,4 @@ Creating custom UI with .xib files
 
 이런 오류가 떴었지만
 height를 greater then or equal로 바꾸니 해결되었다..
+해당 [답변](https://stackoverflow.com/a/69739618)에 따르면 렌더링 과정에서 충돌이 발생하는것 같다고한다.
